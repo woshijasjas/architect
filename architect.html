@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Building</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Abel&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Noto+Sans:wght@400;700&family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Merriweather:wght@400;700&family=Oswald:wght@400;700&family=Barlow:wght@400;700&family=Assistant:wght@400;700&family=Urbanist:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #e790ce;
+            color: #fff;
+            font-family: Source Sans Pro, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+			text-align:center;
+        }
+		
+		#logo {
+			height:200px;
+			align:center;
+		}
+		
+		h1, h2, h3 {
+			color:#fff;
+		}
+		
+		h1 {
+			font-family:lato;
+			font-size:40px;
+		}
+		
+		h2 {
+			font-family:roboto;
+			font-size:30px;
+			opacity:0.7;
+		}
+		
+		h3 {
+			font-family:abel;
+			font-size:30px;
+		}
+
+        .jumbotron {
+            background-image: url('architect pic7.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+			background-repeat: no-repeat;
+            height: 1000px;
+			text-align: center; /* Center-align text */
+			padding-top:250px;
+        }
+		
+		.jumbotron h1 {
+			opacity:0.7;
+		}
+		
+		.jumbotron h2 {
+			opacity:0.7;
+		}
+
+        header {
+            background-color: #000;
+            text-align: center;
+			height:40px;
+        }
+		
+        header h2{
+            font-family:Urbanist;
+			font-weight:400;
+			color:#555;
+        }
+
+        .main-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+			color:#ddd;
+        }
+
+        .image-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+		
+        .single-column-section {
+            width: 100%;
+			text-align:justify;
+			line-height:30px;
+        }
+		
+		.single-column-section h3 {
+			text-align:center;
+		}
+		
+        .two-column-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+			margin-left:100px;
+			margin-right:100px;
+			line-height:30px;
+        }
+
+        .two-column-section div {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+		
+		.justify_left {
+			text-align:left;
+		}
+		
+		.justify_right {
+			text-align:right;
+		}
+		
+		.float-left {
+			float:left;
+		}
+		
+		.float-right {
+			float:right;
+		}
+		
+        .three-column-section {
+            padding: 50px 20px;
+            text-align: left;
+			line-height:30px;
+        }
+		
+		.three-column-section h3 {
+			text-align: center;
+		}
+
+        .column {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .column h3 {
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            font-size: 16px;
+        }
+		
+        .footer_image {
+            background-image: url('architect pic3.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+			background-repeat: no-repeat;
+            height: 100px;
+			text-align: center; /* Center-align text */
+        }
+		
+        .footer {
+            background-color: #10121f;
+            padding: 20px 0;
+            text-align: center;
+			height:30px;
+        }
+		
+		#firm {
+			height:30px;
+			margin-top:0px;
+		}
+
+        .social-icons {
+            margin-top: 0px;
+			margin-left:50px;
+			margin-right:200px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+		
+		.copyright {
+			margin-top: 10px;
+			color:#555;
+		}
+
+        @media (min-width: 768px) {
+            .three-column-section {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .column {
+                width: calc(33.33% - 20px);
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+	<img id="logo" src="logo1.jpg" alt="logo">
+
+    <div class="jumbotron">
+        <h1>Welcome to Our Harmony Citadeck</h1>
+        <h2 class="subtitle">The home of administration.</h2>
+    </div>
+
+    <header>
+        <h2>Explore Our Architectural Designs</h2>
+    </header>
+
+    <div class="main-content">
+	    <section class="single-column-section">
+            <h3>The Citadeck</h3>
+            <p>The government building nestled amidst the tropical garden in Penang, Malaysia, stands as a modern architectural masterpiece, seamlessly blending contemporary design with the lush natural surroundings. Its exterior is a harmonious symphony of sleek lines, glass expanses, and verdant foliage. Towering ceilings and clean, geometric lines characterize the façade, creating an imposing yet elegant structure. The building's exterior is primarily composed of reflective glass walls, allowing an abundance of natural light to flood the interior and providing unobstructed views of the breathtaking tropical garden that envelops the structure. The glass walls not only serve a functional purpose but also become a canvas, merging the boundaries between the interior and the vibrant landscape beyond. Vertical gardens and cascading vines adorn sections of the building's exterior, adding a touch of greenery to the sleek façade. The integration of sustainable design elements, such as energy-efficient glass and shading devices, reflects a commitment to environmental consciousness. At the entrance, a grand portico welcomes visitors, providing both shelter and a visual focal point. The design of the entrance incorporates elements inspired by local architecture, seamlessly marrying modernity with traditional influences. The juxtaposition of the contemporary building against the tropical garden creates a captivating visual contrast, emphasizing both the advancements of human innovation and the enduring beauty of nature. As daylight transitions to dusk, the building comes alive with strategically placed exterior lighting that accentuates its architectural features. The glass walls transform into a luminescent canvas, casting a warm and inviting glow that contrasts with the darkness of the surrounding garden. This government building is not merely a structure; it is a testament to the thoughtful integration of architecture and nature, where the built environment and the tropical landscape coexist in perfect harmony. It stands as a symbol of progress, transparency, and a commitment to preserving the natural beauty that defines Penang, Malaysia.</p>
+        </section>
+	
+
+		<section class="image-section">
+			<img src="architect pic3.jpg" alt="Section Image"> <!-- Add your image URL here -->
+			<h2 class="section-title">The Kitchen</h2>
+			
+			<div class="two-column-section">
+				<div class="justify_right">
+					<p>The kitchen is strategically designed to seamlessly integrate with the breathtaking panorama of the tropical garden visible through the expansive floor-to-ceiling windows. The glass walls serve as a transparent canvas, offering an unobstructed view of the verdant landscape, where vibrant flora dances in the gentle breeze and sunlight bathes the garden in a warm glow. The lobby becomes a transitional space, effortlessly connecting the interior with the serene exterior.</p>
+				</div>
+				<div class="justify_left">
+					<p>A central reception desk, crafted with polished wood and sleek lines, stands as a focal point in the lobby. Behind it, a meticulously curated display showcases local art, cultural artifacts, and achievements, providing a visual narrative that reflects the region's heritage and identity. The fusion of modern design elements and traditional influences creates a sense of harmony and cultural richness.</p>
+				</div>
+			</div>
+		</section>
+
+
+		
+
+		<section class="three-column-section">
+			<div class="column">
+				<img src="architect pic4.jpg" alt="Image 1"> <!-- Add your image URL here -->
+				<h3>The Bedroom</h3>
+				<p>The lush tropical garden surrounding the government building in Penang, Malaysia, captivates the senses with its vibrant colors, exotic flora, and serene ambiance. As you step out onto the glass-walled balcony, you are greeted by an explosion of greenery that stretches out beneath the expansive Malaysian sky.</p>
+
+				<p>A meandering pathway, made of intricately patterned tiles, winds its way through the garden, guiding visitors on a leisurely stroll. Along the path, you encounter a mesmerizing array of indigenous plants and vibrant tropical flowers. Orchids dangle gracefully from the branches of trees, while colorful butterflies flit from one blossom to another, adding an extra layer of enchantment to the scene.</p>
+
+				<p>In the center of the garden, a tranquil pond reflects the azure sky above, its surface occasionally disrupted by the playful antics of koi fish. Water lilies and lotus blossoms float serenely, creating a picturesque tableau that mirrors the peace and harmony found within the heart of Penang. Stone benches strategically placed around the garden offer the perfect spot to pause, reflect, and appreciate the natural splendor that flourishes in this tropical oasis.</p>
+			</div>
+
+			<div class="column">
+				<img src="architect pic5.jpg" alt="Image 2"> <!-- Add your image URL here -->
+				<h3>The Music Room</h3>
+				<p>The loft within the government building in Penang, Malaysia, is a marvel of modern design, seamlessly integrating with the natural beauty of its tropical surroundings. As you ascend the grand staircase, the air of sophistication becomes palpable, setting the tone for the loft's interior.</p>
+
+				<p>Tall ceilings adorned with elegant chandeliers create a sense of spaciousness, allowing ambient light to cascade down onto the intricately designed floor below. The loft features an open-concept layout, with polished marble floors that reflect the opulence of the space. Sleek, contemporary furniture is strategically arranged to maximize the panoramic view of the tropical garden visible through the expansive glass walls.</p>
+
+				<p>The glass walls, one side of the loft, serve as a transparent canvas that frames the lush greenery outside. The seamless integration of indoor and outdoor spaces blurs the boundaries, fostering a sense of connection with nature. The tropical garden below becomes a living tapestry, with sunlight streaming in to illuminate the loft and create a warm, inviting atmosphere.</p>
+			</div>
+
+			<div class="column">
+				<img src="architect pic6.jpg" alt="Image 3"> <!-- Add your image URL here -->
+				<h3>The Toilet</h3>
+				<p>A sleek, marble floor stretches beneath your feet, reflecting the ambient light that filters in through the floor-to-ceiling glass walls on one side. The glass walls provide an unobstructed view of the breathtaking tropical garden outside, creating a seamless connection between the interior and the vibrant natural world beyond. The play of sunlight enhances the foyer's atmosphere, casting soft shadows and illuminating the carefully curated elements within.</p>
+
+				<p>The focal point of the foyer is a meticulously crafted reception desk, adorned with polished wood and minimalist design. Behind it, a large, contemporary mural or artwork captures the essence of Penang's rich cultural heritage, welcoming visitors with a nod to the region's history and identity. Tall potted plants strategically placed throughout the space add a touch of greenery, seamlessly bridging the interior and the exterior.</p>
+
+				<p>The walls of the foyer are adorned with tasteful art installations and displays showcasing local craftsmanship and achievements. Ambient lighting fixtures hang from the ceiling, casting a warm glow that complements the natural light filtering in from the garden. Comfortable seating areas, featuring stylish and ergonomic furniture, invite guests to linger and appreciate the aesthetic harmony of the space.</p>
+			</div>
+		</section>
+
+    </div>
+	
+    <div class="footer_image">
+    </div>
+	
+    <div class="footer">
+		<div class="float-right">
+			<img id="firm" src="firm.jpg" alt="firm">
+		</div>
+        <div class="social-icons float-left">
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+		<div class="copyright">© Copyright 2024. All Rights Reserved</div>
+    </div>
+
+    <!-- Font Awesome icons (you can include this in your project or use a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</body>
+</html>
